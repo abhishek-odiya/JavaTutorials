@@ -6,6 +6,7 @@ public class AlgoOfArray {
 
     // Conductor code
     static void printArray(int[] arr){ // Algorithm Initilisation/ Defination.   
+        System.out.println("Total Element inside the array: ");
             for(int i=0;i<=arr.length-1;i++){
                 System.out.print(arr[i]+" ");
             }
@@ -14,6 +15,7 @@ public class AlgoOfArray {
     
     static void insertInArray(int[] arr){
             Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the Element of Array: ");
             for(int i =0; i<=arr.length-1;i++){
                 arr[i]=sc.nextInt();
             }
@@ -22,6 +24,7 @@ public class AlgoOfArray {
             if(pos<0 || pos>arr.length){        // Checking Overflow and Underflow
                 System.out.println("Position out of range");
             }
+            System.out.println("Value of " + pos + " Element is change to " + value);
             arr[pos-1]=value;
     }
 
@@ -38,7 +41,8 @@ public class AlgoOfArray {
         // printArray(arr);
 
         int[] a={1,2,1,3,2,9,8,7,4,5};
-        UpdateArray(a, 4, 78);
+        printArray(a);
+        UpdateArray(a, 6, 78);
         printArray(a);
     }
 }
