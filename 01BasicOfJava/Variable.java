@@ -44,7 +44,7 @@ public class Variable {
         // Object boolean=false;  // object can't boolean
 
         // Array
-        int[] arr=new int[5];
+        int[] arr= {1,2,5,4,8,6,1};
         float[] arr2=new float[7];
         char[] chrrr=new char[3];
  
@@ -52,7 +52,19 @@ public class Variable {
         System.out.println(ch2);
         System.out.println(num4);
 
-        System.out.println(arr); // array can't print value like this, this will return address of memory
+        System.out.println("Printing only Name: " + arr); // array can't print value like this, this will return address of memory
+
+
+        System.out.println("Printing all the element inside the array using for loop: ");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+
+
+        System.out.println("Using for Each methord: ");
+        for(int i: arr) {
+            System.out.println(i);
+        }
 
 
     }

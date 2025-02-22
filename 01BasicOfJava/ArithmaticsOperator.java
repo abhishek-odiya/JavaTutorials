@@ -22,6 +22,8 @@ public class ArithmaticsOperator {
         System.out.println(sum);
         System.out.println(Multiply);
         System.out.println(substraction);
+        System.out.println(divide);
+        System.out.println(modulus);
 
 
         // Why we are using ArithmaticsOperator?
