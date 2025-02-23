@@ -21,12 +21,11 @@ static int[] ConcatenationOfArray(int[] num){
 }
 
 
-
-
     // Driver
     public static void main(String[] args) {
-        int[] nums={1,2,1};
+        int[] nums={1,2,2};
         int[] ans= ConcatenationOfArray(nums);
        System.out.println(ans);
+       printArray(ans);
     }
 }

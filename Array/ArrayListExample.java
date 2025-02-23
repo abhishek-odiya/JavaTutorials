@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
+import java.util.List;
 
 public class ArrayListExample {
     // code 
@@ -20,6 +21,7 @@ public class ArrayListExample {
 
     static void printArrayList(ArrayList<Integer> arr){
         int n=arr.size();
+        System.out.println("Total value inside the array list: ");
         for(int i=0;i<n;i++){
             int value=arr.get(i);
             System.out.print(value+" ");
@@ -50,19 +52,27 @@ public class ArrayListExample {
         arr.forEach((n)-> {System.out.println(n);});
     }
 
-    static void updateArrayList(ArrayList<Integer> arr, Integer value,Integer newvalue){
-        if(!arr.contains(value)){
-            System.out.println("Element does not exists");
-        }
-        arr.set(arr.indexOf(value), newvalue);
-    }
+    // static void updateArrayList(ArrayList<Integer> arr, Integer value,Integer newvalue){
+    //     if(!arr.contains(value)){
+    //         System.out.println("Element does not exists");
+    //     }
+    //     arr.set(arr.indexOf(value), newvalue);
+    // }
 
     //Driver
     public static void main(String[] args) {
-       // int[] arr=new int[10];
+       int[] arr=new int[10];
         // ArrayList<Integer> newArray=new ArrayList<Integer>(){
         //     1,2,3,4,5
         // };
+
+        ArrayList<Integer> newArray = new ArrayList<Integer>(List.of(1,2,3,4,5));
+        
+        printArrayList(newArray);
+        deleteArrayList(newArray, 3);
+        printArrayList(newArray);
+        updateArrayList(newArray, 2, 8);
+        printArrayList(newArray);
         
     }
 }
