@@ -8,7 +8,8 @@ public class Stack {
         return top == -1;
     }
     boolean isFull(){
-        return top == data.length;
+        // return top == data.length;
+        return top == data.length -1;
     }
 
     void push(int d){

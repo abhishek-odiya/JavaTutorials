@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class StringPractice {
     public static void main(String[] args) {
-        // String s = "JavaTutuorial";
+        // String s = "Java Tutuorial";
 
-        // // for(int i=0;i< s.length();i++){
-        // //     System.out.println(s.charAt(i));
-        // // }
+        // for(int i=0;i< s.length();i++){
+        //     System.out.println(s.charAt(i));
+        // }
 
         // String s2 ="Coding Thinker";
         // String s3 = s.concat(s2);
@@ -50,10 +50,10 @@ public class StringPractice {
 
 
     
-    // // for(int i=0;i<str2.length;i++){
-    // //     System.out.println(str2[i]+" :  length :"+ str2[i].length());
+    // for(int i=0;i<str2.length;i++){
+    //     System.out.println(str2[i]+" :  length :"+ str2[i].length());
        
-    // // }
+    // }
 
     // for(int i=0;i<str2.length;i++){
     //     System.out.println(str2[i]+" :  index of :"+target+" = " 
