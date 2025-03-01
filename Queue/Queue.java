@@ -6,7 +6,7 @@ public class Queue {
 
     Queue(){
         front = -1;
-        rear = -1;
+        rear = -1;  
     }
 
 
@@ -16,7 +16,8 @@ public class Queue {
     }
 
     boolean isEmpty(){
-        return front == -1;
+        // return front == -1;
+        return front == -1 || front > rear;         //Proper empty condition
     }
 
     void enqueue(int value){
@@ -24,8 +25,10 @@ public class Queue {
             System.out.println("Queue is Full");
         }
         else if(isEmpty()){
-            front +=1;
-            rear +=1;
+            // front +=1;
+            // rear +=1;
+            front = 0;
+            rear = 0;
             data[rear]=value;
         }else{
             rear +=1;
@@ -33,19 +36,25 @@ public class Queue {
         }
     }
     int dequeue(){
-        int value=-1;
+        int value = -1;
         if(isEmpty()){
             System.out.println("Nothing to Delete, Queue is Empty");
-        }else{
-            if(front >= data.length){
+            return -1;
+        }
+
+            value = data[front];
+            front +=1;
+
+            if(front > rear){
                 front = -1;
+                rear = -1;  //front and rear should reset to -1, After Deleting all element
                 System.out.println("All Element has Deleted");
             }
-            else{
-                 value = data[front];
-                 front +=1;
-            }
-        }
+            
+                //   value = data[front];
+                //   front +=1;
+            
+        
         return value;
     }
 
